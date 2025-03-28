@@ -1,0 +1,16 @@
+{
+    "name": "SalesDataPipeline",
+    "activities": [
+        {
+            "name": "CopyCSVToDataLake",
+            "type": "Copy",
+            "inputs": [ { "referenceName": "RawSalesData" } ],
+            "outputs": [ { "referenceName": "StagingSalesData" } ]
+        },
+        {
+            "name": "DatabricksNotebook",
+            "type": "DatabricksNotebook",
+            "linkedServiceName": { "referenceName": "DatabricksLinkedService" }
+        }
+    ]
+}

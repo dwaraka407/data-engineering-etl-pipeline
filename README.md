@@ -4,4 +4,3 @@ This project demonstrates an ETL pipeline using Azure Data Factory, Databricks, 
 1. Extract data from CSV (stored in Azure Data Lake).
 2. Transform data using PySpark in Databricks.
 3. Load transformed data into Azure Synapse Analytics.
-# data-engineering-etl-pipeline
